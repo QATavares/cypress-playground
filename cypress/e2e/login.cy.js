@@ -1,12 +1,10 @@
 describe('Login', () => {
   beforeEach(() => {
-    cy.viewport(1920, 1080)
-    cy.visit('https://playground.cyskills.com.br/login')
-    cy.contains('h2', 'Faça login').should('be.visible')
+    cy.goHome()
   })
   it('Deve logar com sucesso', () => {
     cy.login('papito@cyskills.com.br', 'showtime')
-    cy.get('[data-cy="welcome-title"]').should('be.visible')
+    cy.userLoggedIn()
   })
 
   it('Não deve efetuar login Email invalido', () => {
