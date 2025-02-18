@@ -1,5 +1,3 @@
-//import commands from '../support/commands'
-
 describe('Login', () => {
   beforeEach(() => {
     cy.viewport(1920, 1080)
