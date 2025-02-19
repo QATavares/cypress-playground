@@ -42,3 +42,9 @@ Cypress.Commands.add('userLoggedIn', ()=> {
 Cypress.Commands.add('noticeHave', (text) => {
     cy.get('.notice p').should('be.visible').and('have.text', 'E-mail ou senha incorretos. Por favor, tente novamente!')  
   })
+
+Cypress.Commands.add('goTo', (route, title)=>{
+    cy.get(`a[href="${route}"]`).click()
+    cy.contains('h2', title).should('be.visible')
+
+})
