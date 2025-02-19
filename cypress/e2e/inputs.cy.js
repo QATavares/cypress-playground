@@ -3,7 +3,7 @@ describe ('Input Fields', ()=> {
         cy.goHome()
       })
 
-    it('deve preencher o campo texto', () => {
+    it('Input Fields', () => {
         const dataAtual = new Date();
         const ano = dataAtual.getFullYear();
         const mes = String(dataAtual.getMonth() + 1).padStart(2, '0');
