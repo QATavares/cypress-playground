@@ -1,4 +1,4 @@
-describe ('Radio Button', ()=> {
+describe ('Tags', ()=> {
     beforeEach(() => {
         cy.goHome()
         cy.login('papito@cyskills.com.br', 'showtime')
