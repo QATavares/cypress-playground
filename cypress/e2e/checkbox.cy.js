@@ -1,8 +1,7 @@
 describe ('Checkbox', ()=> {
     beforeEach(() => {
         cy.goHome()
-        cy.login('papito@cyskills.com.br', 'showtime')
-        cy.userLoggedIn()
+        cy.doLogin()
       })
 
     it('Marcar as linguagens que usam node.js', () => {

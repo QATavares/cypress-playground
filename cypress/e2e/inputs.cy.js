@@ -10,8 +10,7 @@ describe ('Input Fields', ()=> {
         const dia = String(dataAtual.getDate()).padStart(2, '0');
         const dataFormatada = `${ano}-${mes}-${dia}`;
 
-        cy.login('papito@cyskills.com.br', 'showtime')
-        cy.userLoggedIn()
+        cy.doLogin()
 
         cy.get('a[href="/input-fields"').click()
         cy.contains('h2', 'Input Fields').should('be.visible')

@@ -3,6 +3,10 @@ Cypress.Commands.add('goHome', ()=>{
     cy.visit('https://playground.cyskills.com.br/login')
     cy.contains('h2', 'Faça login').should('be.visible')
 })
+Cypress.Commands.add('doLogin', () =>{
+    cy.login('papito@cyskilss.com.br', 'showtime')
+    cy.userLoggedId()
+})
 
 Cypress.Commands.add('login', (email, password) =>{
 
