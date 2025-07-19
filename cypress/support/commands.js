@@ -4,8 +4,8 @@ Cypress.Commands.add('goHome', ()=>{
     cy.contains('h2', 'Faça login').should('be.visible')
 })
 Cypress.Commands.add('doLogin', () =>{
-    cy.login('papito@cyskilss.com.br', 'showtime')
-    cy.userLoggedId()
+    cy.login('papito@cyskills.com.br', 'showtime')
+    cy.userLoggedIn()
 })
 
 Cypress.Commands.add('login', (email, password) =>{

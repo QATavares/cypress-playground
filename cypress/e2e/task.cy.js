@@ -3,7 +3,7 @@ describe ('Task Board', ()=> {
         cy.goHome()
         cy.doLogin()
         
-        cy.goTo('/taks', 'Task Board')
+        cy.goTo('/tasks', 'Task Board')
       })
 
     it('', () => {

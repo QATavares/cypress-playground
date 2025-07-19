@@ -3,11 +3,12 @@ describe ('CEP', ()=> {
         cy.goHome()
         cy.doLogin()
 
-        cy.goTo('/cep', 'Date Picker')
+        cy.goTo('/cep', 'CEP (API dos Correios)')
       })
 
-    it('', () => {
-
+    it('Cadastrar endereço', () => {
+      cy.get('#cep').type('05653-070')
+      cy.get('button[type="submit"]').click()
     })
     
 })
